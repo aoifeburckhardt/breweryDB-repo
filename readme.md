@@ -1,4 +1,4 @@
-**Features**
+# Features
 - Beer list on load
 - Searchable Beers
 - Searchable Breweries
@@ -10,7 +10,7 @@
 
 ![screenshot](https://cloud.githubusercontent.com/assets/28321134/25643961/ae94ec54-2f9a-11e7-845b-907b02d9ad9c.png)
 
-**Set up**
+# Set up
 
 To run this app make sure that npm is installed on your device(https://www.npmjs.com/get-npm)
 
@@ -26,7 +26,7 @@ To run this app make sure that npm is installed on your device(https://www.npmjs
 
 The server will start and the browser with open automatically.
 
-**Technical Summary**
+# Technical Summary
 
 - This app was built with AngularJS v1.6.4, Bootstrap v3.3.7.
 - Gulp is used as a task runner to:
@@ -36,14 +36,14 @@ The server will start and the browser with open automatically.
 - The app is responsive.
 - The unit tests are perform with the Jasmine test framework, using Karma (test runner) and Grunt (task runner).
 
-**Unit tests**
+# Unit tests
 
 1. Run the following commands one by one:
 
 - npm install -g grunt
 - grunt karma:unit
 
-**If I had more time**
+# If I had more time
 
 - Handle the slow loading of data from BreweryDB with loading visualisation or caching
 - Add further protections for if the API changes and retrieves unexpected data
