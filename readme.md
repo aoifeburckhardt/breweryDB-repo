@@ -18,17 +18,17 @@ To run this app make sure that npm is installed on your device(https://www.npmjs
 
 2. Run the following commands one by one:
 
-git clone https://github.com/aoifeburckhardt/distilled-sch-aburckhardt.git
-npm install
-npm install -g gulp
-gulp start
+- git clone https://github.com/aoifeburckhardt/distilled-sch-aburckhardt.git
+- npm install
+- npm install -g gulp
+- gulp start
 
-** Unit tests **
+**Unit tests**
 
 1. Run the following commands one by one:
 
-npm install -g grunt
-grunt karma:unit
+- npm install -g grunt
+- grunt karma:unit
 
 **Features**
 - Beer list on load
@@ -42,8 +42,11 @@ grunt karma:unit
 
 **If I had more time**
 
-1. Handle the slow loading of data from BreweryDB with loading visualisation or caching
-2. Add further protections for if the API changes and retrieves unexpected data
-3. More comprehensive unit tests
-4. End to end testing with protractor
-5. UI optimisation for mobile.
+- Handle the slow loading of data from BreweryDB with loading visualisation or caching
+- Add further protections for if the API changes and retrieves unexpected data
+- More comprehensive unit tests
+- End to end testing with protractor
+- UI optimisation for mobile (Although the UI is already responsive).
+- Minify JavaScript using gulp
+- Use gulp to run the unit test instead of grunt
+- Store the API key as a const for easy re-use
