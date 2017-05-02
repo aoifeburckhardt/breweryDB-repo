@@ -8,6 +8,8 @@
 - Random beer button
 - Filter current beer list (Progressive)
 
+![screenshot](https://cloud.githubusercontent.com/assets/28321134/25643961/ae94ec54-2f9a-11e7-845b-907b02d9ad9c.png)
+
 **Set up**
 
 To run this app make sure that npm is installed on your device(https://www.npmjs.com/get-npm)
