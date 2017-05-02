@@ -61,7 +61,7 @@ describe('BeerController', function () {
 
         scope.getRandomBeer();
 
-        expect(scope.detailBeer.name).toEqual("Beer 3");
+        expect(scope.detailBeer.name).toEqual("Beer 2");
 
         //Restore Math.random() for future testing
         Math.random = originalMathRandom;

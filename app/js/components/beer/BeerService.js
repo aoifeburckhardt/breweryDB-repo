@@ -8,14 +8,6 @@ app.factory('BeerService', function ($http) {
         .then(function (data) {
         return(data.data.data);
     });
-    
-    // var beersFromBrewery = {
-    //     get: function (id) {
-    //         $http.get('api/brewery/'+id+'/beers?p=1&withBreweries=Y&key=79067aa92ce6aa05dbb647cf5df7da92').then(function (response) {
-    //             return response.data.data;
-    //         })
-    //     }
-    // };
 
     return {
         fiftyBeersFuture: fiftyBeersFuture

@@ -17,7 +17,7 @@ app.controller('BeerController', ['$scope', 'BeerService', '$http', function ($s
         var beersSize = $scope.originalFifty.length;
 
         //Although the default array size expected is 50 - get a random number based on the size of this array in case the API has sent an unexpected size
-        var randomNumber = Math.floor((Math.random() * beersSize) + 1);
+        var randomNumber = Math.floor((Math.random() * beersSize));
 
         //If the random number is the same as the previous random number call the function again
         if(randomBeerIndex === randomNumber) {
@@ -65,7 +65,8 @@ app.controller('BeerController', ['$scope', 'BeerService', '$http', function ($s
             }
             $scope.clearButton = true;
         }, function (err) {
-            console.log("Err");
+            //To be replaced by error view in future iterations
+            alert("Error contacting BreweryDB API, please try again later");
         });
     };
 
@@ -80,7 +81,6 @@ app.controller('BeerController', ['$scope', 'BeerService', '$http', function ($s
                 $scope.failedQuery = "";
                 $scope.beers = [];
                 $scope.breweries = data.data.data;
-                console.log($scope.breweries);
             } else {
                 $scope.beers = [];
                 $scope.breweries = [];
@@ -88,7 +88,8 @@ app.controller('BeerController', ['$scope', 'BeerService', '$http', function ($s
             }
             $scope.clearButton = true;
         }, function (err) {
-            console.log("Err");
+            //To be replaced by error view in future iterations
+            alert("Error contacting BreweryDB API, please try again later");
         });
     }
 
@@ -110,7 +111,9 @@ app.controller('BeerController', ['$scope', 'BeerService', '$http', function ($s
     $scope.showOtherBeer = function (breweryId) {
         $http.get('api/brewery/'+breweryId+'/beers?p=1&withBreweries=Y&key=79067aa92ce6aa05dbb647cf5df7da92').then(function (response) {
             $scope.othersByBrewery = response.data.data;
-            console.log($scope.othersByBrewery);
+        }, function (err) {
+            //To be replaced by error view in future iterations
+            alert("Error contacting BreweryDB API, please try again later");
         })
     };
 
