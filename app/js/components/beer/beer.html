@@ -20,7 +20,7 @@
                 </form>
 
             <h2 class="sub-header">Results</h2>
-            <form ng-hide="beers.length <= 1" class="beerFilterForm">
+            <form class="beerFilterForm">
                 <input type="text" class="beerFilter" ng-model="query" placeholder="Filter these results...">
             </form>
 
@@ -71,7 +71,7 @@
                     <div class="beerStats">
                         <p ng-show="detailBeer.isOrganic === 'N'"><span  class="glyphicon glyphicon-grain" aria-hidden="true"></span> Organic</p>
                         <p ng-show="detailBeer.abv != null"><span class="glyphicon glyphicon-glass" aria-hidden="true"></span> Alcohol: {{ detailBeer.abv }}%</p>
-                    <h4>Availability</h4>
+                    <h4 ng-show="detailBeer.available.description">Availability</h4>
                     <p>{{ detailBeer.available.description }}</p>
                     <h4 ng-show="currentBrewery">Brewery</h4>
                     <p>{{ currentBrewery }}</p>

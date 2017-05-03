@@ -57,10 +57,13 @@ app.controller('BeerController', ['$scope', 'BeerService', '$http', function ($s
 
         $http.get('api/search?q='+$scope.searchQuery+'&type=beer&withBreweries=Y&key=79067aa92ce6aa05dbb647cf5df7da92').then(function (data) {
             if(data.data.data) {
+                $scope.query = "";
                 $scope.failedQuery = "";
                 $scope.beers = data.data.data;
+                $scope.breweries = [];
             } else {
                 $scope.beers = [];
+                $scope.breweries = [];
                 $scope.failedQuery = $scope.searchQuery;
             }
             $scope.clearButton = true;
@@ -78,6 +81,7 @@ app.controller('BeerController', ['$scope', 'BeerService', '$http', function ($s
 
         $http.get('api/search?q='+$scope.searchQuery+'&type=brewery&key=79067aa92ce6aa05dbb647cf5df7da92').then(function (data) {
             if(data.data.data) {
+                $scope.query = "";
                 $scope.failedQuery = "";
                 $scope.beers = [];
                 $scope.breweries = data.data.data;
