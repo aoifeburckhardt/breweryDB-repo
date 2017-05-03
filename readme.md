@@ -50,6 +50,7 @@ The server will start and the browser with open automatically.
 - More comprehensive unit tests
 - End to end testing with protractor
 - UI optimisation for mobile (Although the UI is already responsive).
+- Directives - This app is only one view now but if it extended then some useful reusable components would be the detailed beer view, a search result item
 - Minify JavaScript using gulp
 - Use gulp to run the unit test instead of grunt
 - Store the API key as a const for easy re-use
