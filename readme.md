@@ -33,8 +33,8 @@ The server will start and the browser with open automatically.
            1. Copy third party libraries to the asset folder
            2. Serve the app through a proxy (using BrowserSync)
 - The app connects with BreweryDB API
-- The app is responsive.
-- The unit tests are perform with the Jasmine test framework, using Karma (test runner) and Grunt (task runner).
+- The app is responsive (although no specific design has been done for mobile).
+- The unit tests are performed with the Jasmine test framework, using Karma (test runner) and Grunt (task runner).
 
 # Unit tests
 
