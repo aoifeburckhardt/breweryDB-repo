@@ -3,6 +3,7 @@ var install = require('gulp-install');
 var url = require('url');
 var proxyMiddleware = require('proxy-middleware');
 var browserSync = require('browser-sync');
+var Server = require('karma').Server;
 
 
 // Copy libraries from /node_modules into /assets
@@ -29,7 +30,13 @@ gulp.task('install', function () {
 });
 
 // Run everything
-gulp.task('start', ['copy', 'serve']);
+gulp.task('start', ['copy', 'unit', 'serve']);
+
+gulp.task('unit', function (done) {
+    new Server({
+        configFile: require('path').resolve('karma-init.conf.js')
+    }, done).start();
+});
 
 // Configure the browserSync task
 gulp.task('browser-sync', function() {

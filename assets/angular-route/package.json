@@ -10,7 +10,7 @@
         "spec": ">=1.6.4 <2.0.0",
         "type": "range"
       },
-      "C:\\Users\\i334037\\Desktop\\DistilledSCH"
+      "C:\\Users\\i334037\\Desktop\\breweryDB-repo"
     ]
   ],
   "_from": "angular-route@>=1.6.4 <2.0.0",
@@ -45,7 +45,7 @@
   "_shasum": "7bb216fcda746a1b8c452054b05900a7074ecc62",
   "_shrinkwrap": null,
   "_spec": "angular-route@^1.6.4",
-  "_where": "C:\\Users\\i334037\\Desktop\\DistilledSCH",
+  "_where": "C:\\Users\\i334037\\Desktop\\breweryDB-repo",
   "author": {
     "name": "Angular Core Team",
     "email": "angular-core+npm@google.com"

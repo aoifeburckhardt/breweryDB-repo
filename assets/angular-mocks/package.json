@@ -2,18 +2,18 @@
   "_args": [
     [
       {
-        "raw": "angular-mocks",
+        "raw": "angular-mocks@^1.6.4",
         "scope": null,
         "escapedName": "angular-mocks",
         "name": "angular-mocks",
-        "rawSpec": "",
-        "spec": "latest",
-        "type": "tag"
+        "rawSpec": "^1.6.4",
+        "spec": ">=1.6.4 <2.0.0",
+        "type": "range"
       },
-      "C:\\Users\\i334037\\Desktop\\DistilledSCH"
+      "C:\\Users\\i334037\\Desktop\\breweryDB-repo"
     ]
   ],
-  "_from": "angular-mocks@latest",
+  "_from": "angular-mocks@>=1.6.4 <2.0.0",
   "_id": "angular-mocks@1.6.4",
   "_inCache": true,
   "_installable": true,
@@ -30,23 +30,22 @@
   "_npmVersion": "3.10.10",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "angular-mocks",
+    "raw": "angular-mocks@^1.6.4",
     "scope": null,
     "escapedName": "angular-mocks",
     "name": "angular-mocks",
-    "rawSpec": "",
-    "spec": "latest",
-    "type": "tag"
+    "rawSpec": "^1.6.4",
+    "spec": ">=1.6.4 <2.0.0",
+    "type": "range"
   },
   "_requiredBy": [
-    "#DEV:/",
-    "#USER"
+    "#DEV:/"
   ],
   "_resolved": "https://registry.npmjs.org/angular-mocks/-/angular-mocks-1.6.4.tgz",
   "_shasum": "47fdf50921cf24fb489f100a8cf2ad99d0538f40",
   "_shrinkwrap": null,
-  "_spec": "angular-mocks",
-  "_where": "C:\\Users\\i334037\\Desktop\\DistilledSCH",
+  "_spec": "angular-mocks@^1.6.4",
+  "_where": "C:\\Users\\i334037\\Desktop\\breweryDB-repo",
   "author": {
     "name": "Angular Core Team",
     "email": "angular-core+npm@google.com"
