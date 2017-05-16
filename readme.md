@@ -17,7 +17,7 @@ To run this app make sure that npm is installed on your device(https://www.npmjs
 **Start the app**
 
 1. Navigate to the folder you want to place the app in.
-2. Run this command: git clone https://github.com/aoifeburckhardt/distilled-sch-aburckhardt.git
+2. Run this command: git clone https://github.com/aoifeburckhardt/breweryDB-repo.git
 3. Navigate to distilled-sch-aburckhardt
 4. Run the following commands one by one:
 - npm install
