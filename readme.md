@@ -34,14 +34,11 @@ The server will start and the browser with open automatically.
            2. Serve the app through a proxy (using BrowserSync)
 - The app connects with BreweryDB API
 - The app is responsive (although no specific design has been done for mobile).
-- The unit tests are performed with the Jasmine test framework, using Karma (test runner) and Grunt (task runner).
+- The unit tests are performed with the Jasmine test framework, using Karma (test runner) and Gulp (task runner).
 
 # Unit tests
 
-1. Run the following commands one by one:
-
-- npm install -g grunt
-- grunt karma:unit
+Unit tests are run as part of the gulp "start" task.
 
 # If I had more time
 
@@ -52,5 +49,4 @@ The server will start and the browser with open automatically.
 - UI optimisation for mobile (Although the UI is already responsive).
 - Directives - This app is only one view now but if it extended then some useful reusable components would be the detailed beer view, a search result item
 - Minify JavaScript using gulp
-- Use gulp to run the unit test instead of grunt
 - Store the API key as a const for easy re-use
